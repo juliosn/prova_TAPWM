@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Consulta</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tela de Consulta</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each post}}
+                {{#dataValues}}
+                <tr>
+                    <td>{{nome}}</td>
+                    <td>{{telefone}}</td>
+                    <td>
+                        <button class="btn btn-primary"><a href="/editar/{{id}}">Editar</a></button>
+                        <button class="btn btn-primary"><a href="/excluir/{{id}}">Excluir</a></button>
+                    </td>
+                </tr>
+                <!-- Adicione mais linhas conforme necessário -->
+                {{/dataValues}}
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

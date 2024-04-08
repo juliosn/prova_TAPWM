@@ -1,0 +1,19 @@
+<div class="container">
+        <h1>Cadastro de Cliente</h1>
+        {{#each post}}
+        {{#dataValues}}
+        <form action="/atualizar" method="POST">
+            <div class="form-group">
+                <input type="hidden" name="id" class="form-control" id="nome" value="{{id}}">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite o nome" value="{{nome}}">
+            </div>
+            <div class="form-group">
+                <label for="endereco">Telefone:</label>
+                <input type="text" name="telefone" class="form-control" id="telefone" placeholder="Digite o telefone" value="{{telefone}}">
+            </div>
+            <button type="submit" class="btn btn-primary">Atualizar</button>
+        </form>
+        {{/dataValues}}
+        {{/each}}
+</div>
