@@ -1,0 +1,41 @@
+<br>
+<div class="container">
+    <h1>Cadastro de Cliente</h1>
+    <form action="/cadastrar" method="POST">
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite o nome">
+        </div>
+        <div class="form-group">
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" class="form-control" id="endereco" placeholder="Digite o endereço">
+        </div>
+        <div class="form-group">
+            <label for="bairro">Bairro:</label>
+            <input type="text" name="bairro" class="form-control" id="bairro" placeholder="Digite o bairro">
+        </div>
+        <div class="form-group">
+            <label for="cep">CEP:</label>
+            <input type="text" name="cep" class="form-control" id="cep" placeholder="Digite o CEP">
+        </div>
+        <div class="form-group">
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" class="form-control" id="cidade" placeholder="Digite a cidade">
+        </div>
+        <div class="form-group">
+            <label for="estado">Estado:</label>
+            <input type="text" name="estado" class="form-control" id="estado" placeholder="Digite o estado">
+        </div>
+        <div class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input type="text" name="telefone" class="form-control" id="telefone" placeholder="Digite o telefone">
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+    <br>
+    <div>
+        <button class="btn btn-primary text-light"><a href="/consultar" style="color:inherit">
+                Consultar
+            </a></button>
+    </div>
+</div>
